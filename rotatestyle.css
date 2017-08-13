@@ -1,0 +1,76 @@
+body{
+	background-color:deepSkyBlue; /* Background Color of Page */
+}
+#wrapper { 
+	width:200px; /*Position wrapper of button setting width and the margin center position div */ 
+	margin:30px auto; 
+}
+ul { 
+	list-style-type:none; /* Clear all li styles */
+}
+#button { 
+	width:150px; /* Drawing a circle of width 150px */
+	height:150px; /* Drawing a circle of height 150px */
+  background-image:-webkit-linear-gradient(top,rgb(233, 226, 223) 1.6%, rgb(31, 140, 145) 94.9%, rgb(116, 145, 177)); /* Background color of button */
+  background-image:-moz-linear-gradient(top,rgb(233, 226, 223) 1.6%, rgb(31, 140, 145) 94.9%, rgb(116, 145, 177)); /* Background color of button */
+  background-image:-o-linear-gradient(top,rgb(233, 226, 223) 1.6%, rgb(31, 140, 145) 94.9%, rgb(116, 145, 177)); /* Background color of button */
+  background-image:-ms-linear-gradient(top,rgb(233, 226, 223) 1.6%, rgb(31, 140, 145) 94.9%, rgb(116, 145, 177)); /* Background color of button */
+	background-image:linear-gradient(top,rgb(233, 226, 223) 1.6%, rgb(31, 140, 145) 94.9%, rgb(116, 145, 177)); /* Background color of button */
+	border-radius: 100px; /* Radius of button to draw a circle */
+	box-shadow: -7px 0 0 rgb(121, 147, 148); /* Box shadow for 3d Effect */
+}	
+#button_inner { 
+	width:100px; /* Width of inner button circle*/
+	height:100px; /* Width of inner button circle*/ 
+background-image:-webkit-linear-gradient(top,rgb(233, 226, 223) 1.6%, rgb(31, 140, 145) 94.9%, rgb(116, 145, 177)); /* Background color of button */
+  background-image:-moz-linear-gradient(top,rgb(233, 226, 223) 1.6%, rgb(31, 140, 145) 94.9%, rgb(116, 145, 177)); /* Background color of button */
+background-image:-ms-linear-gradient(top,rgb(233, 226, 223) 1.6%, rgb(31, 140, 145) 94.9%, rgb(116, 145, 177)); /* Background color of button */
+background-image:-o-linear-gradient(top,rgb(233, 226, 223) 1.6%, rgb(31, 140, 145) 94.9%, rgb(116, 145, 177)); /* Background color of button */
+background-image:linear-gradient(top,rgb(233, 226, 223) 1.6%, rgb(31, 140, 145) 94.9%, rgb(116, 145, 177)); /* Background color of button */
+	border-radius: 100px; /* Radius of button to draw a circle */
+	box-shadow: inset -7px 0 0 rgb(121, 147, 148);
+	position:relative; 
+	left:25px; /* Position in center of top button */
+	top:25px; /* Position in center of top button */
+	border:2px solid rgb(121, 147, 148);
+}
+ul{
+	top: -15px; /* Position Holes properly */
+	position: relative;
+	left: -40px;
+}
+li { 
+	display:inline-block; /* Position Holes side by side */
+	width:18px; /*Width of hole */
+	height:18px; /* Height of hole */
+	margin:4px; 
+	background:deepSkyBlue; /* Hole background color is same as background color */
+	border-radius: 9px; /* Hole radius */
+	box-shadow: inset -3px 0 0 rgb(121, 147, 148); 
+	position:relative; 
+	top:22px; /*Positioning of holes properly*/
+	left:20px; /*Positioning of holes properly*/
+}
+@keyframes twist {
+    from { transform: scaleX(1); }/* To produce movement*/
+    to { transform: scaleX(0.2); }
+}
+
+#wrapper {
+	animation: twist 3s ease-in-out infinite;
+	animation-direction: alternate;
+ }
+#shadow { 
+	position:relative;
+	height: 12px; /*Use metrics of parent div*/
+    width: 140px;
+    top: 15px;/*Positioning of Shadow*/
+    left: 0px;
+    background-image: -webkit-radial-gradient(50% 50%, ellipse closest-corner, rgba(27, 140, 162, 0.7), deepSkyBlue 74%);/*Final color is background color*/
+background-image: -moz-radial-gradient(50% 50%, ellipse closest-corner, rgba(27, 140, 162, 0.7), deepSkyBlue 74%);/*Final color is background color*/
+  background-image: -ms-radial-gradient(50% 50%, ellipse closest-corner, rgba(27, 140, 162, 0.7), deepSkyBlue 74%);/*Final color is background color*/
+background-image: -o-radial-gradient(50% 50%, ellipse closest-corner, rgba(27, 140, 162, 0.7), deepSkyBlue 74%);/*Final color is background color*/
+background-image: radial-gradient(50% 50%, ellipse closest-corner, rgba(27, 140, 162, 0.7), deepSkyBlue 74%);/*Final color is background color*/
+
+  
+}
